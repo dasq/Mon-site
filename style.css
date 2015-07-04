@@ -30,7 +30,9 @@ section {
 
 }
 
-#nav { width: 410px; float: right; margin-top: 20px; }
+img#banner {opacity:0;}
+
+nav { width: 410px; float: right; margin-top: 20px; }
 
 #logo a { 
 	color: #fff; 
@@ -43,25 +45,31 @@ section {
 	font-weight: bold; 
 	}
 	
-#nav ul{
+nav ul{
     list-style: none;
     display: block;
     margin: 0 auto;
     list-style: none;
 }
 
-#nav li{
+nav li{
     margin-top: 9px;
     float: left;
     padding-left: 9px;
 }
 
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
-#nav li a:hover { color: #fff; opacity:1;  }
+nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+nav li a:hover { color: #fff; opacity:1;  }
+
+nav select {display:none;}
+
+@media only screen and (max-width:960px) {
+	nav ul {display:none;}
+	nav select {display: initial;}
+}
 
 #about {
-	/*background: url("img/+3/DSC01939.JPG"); */
 	color: #fff;
 	height: 600px;
     margin: 0;
@@ -71,22 +79,18 @@ section {
 	
 #music{
 	height: 600px;
-	/*background:url("img/+3/DSC01942.JPG")*/
 	}
 
 #pictures{
 	height: 600px;
-	/*background:url("img/+3/DSC01953.JPG")*/
 	}
 
 #tour{
 	height: 600px;
-	/*background:url("img/+3/DSC02074.JPG")*/
 	}
 
 #contact{
 	height: 600px;
-	/*height: 600px;*/
 }
 
 
