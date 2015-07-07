@@ -72,13 +72,13 @@ nav li a { color: #fff; opacity:0.6; font-size: 20px; text-decoration: none; fon
 nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
 nav li a:hover { color: #fff; opacity:1;  }
 
-/*nav select {display:none;}
+nav select {display:none;}
 
 @media only screen and (max-width:960px) {
 	nav ul {display:none;}
 	nav select  {display: inline-block;}
 
-}*/
+}
 
 #about {
 	color: #fff;
