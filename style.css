@@ -23,7 +23,11 @@ img {
 section {
 	height: 600px;
 }
-  
+
+#menu-container{
+	height:80px;
+	width:100%;
+}
 #menu {
 	background-color: #629bb3;
 	height: 80px;

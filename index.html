@@ -17,7 +17,7 @@
 		<script src="js/jquery.sticky.js"></script>
 		<script>
 		  $(document).ready(function(){
-			$("#menu").sticky({topSpacing:0});
+			$("#test").sticky({topSpacing:0, className:"hey"});
 		  });
 		</script>
 		<script src="js/parallax.js-master/parallax.min.js"></script>
@@ -52,8 +52,8 @@
 		<div data-parallax="scroll" data-image-src="img/Logo.jpg">
 			<img id="banner" src='img/Logo.jpg' alt="banner">
 		</div>
-		
-		<div id="menu">
+		<div id="menu-container">
+			<div id="menu">
 				<div id="logo"> <a href="#banner">Farid Bentchakal</a> </div>
 				<nav class="fixed-nav-bar" style="">
 					<ul>
@@ -72,7 +72,8 @@
 						<option value="#contact">Contact</option>
 					</select>
 				</nav>
-		</div>		
+			</div>		
+		</div>	
 		<div id="about" class="container">
 			<div class="box">
 				<h2> About </h2>
