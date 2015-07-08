@@ -44,7 +44,12 @@
 		 
 		});
 		</script>
-		
+		<script type="text/javascript">
+			function scrollTo(target){
+				var targetPosition = $(target).offset().top;
+				$('html,body').animate({ scrollTop: targetPosition}, 'slow');
+			}
+		</script>
     </head>
 	
 	<body>
@@ -52,7 +57,7 @@
 		<div data-parallax="scroll" data-image-src="img/Logo.jpg">
 			<img id="banner" src='img/Logo.jpg' alt="banner">
 		</div>
-		<div id="test">
+		<div id="menu-container">
 			<div id="menu">
 				<div id="logo"> <a href="#banner">Farid Bentchakal</a> </div>
 				<nav class="fixed-nav-bar" style="">
@@ -63,7 +68,7 @@
 						<li><a class="lien4" href="#tour">Tour dates</a></li>
 						<li><a class="lien5" href="#contact">Contact</a></li>
 					</ul>
-					<select>
+					<select name="dropdpown" size="1" onchange="scrollTo(this.value)">
 						<option value="" selected="Menu">Menu</option> 
 						<option value="#about">About</option>
 						<option value="#music">Music</option>
@@ -122,6 +127,9 @@
 			</div>
 		</div>
 		
+		
+    	
+	
 	</body>	
 	
 </html>
