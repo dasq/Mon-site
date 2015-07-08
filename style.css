@@ -24,7 +24,7 @@ section {
 	height: 600px;
 }
 
-#test{
+#menu-container{
 	height:80px;
 	width:100%;
 }
@@ -103,6 +103,7 @@ nav select {display:none;}
 	height: 600px;
     margin: 0;
     padding: 20px 20px 20px 20px;
+	margin-top: 0px;
 	background-color: #629bb3;	
 	text-align: left;
 	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
