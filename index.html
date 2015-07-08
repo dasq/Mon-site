@@ -15,6 +15,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.sticky.js"></script>
+		<script src="smooth-scroll.js"></script>
 		<script>
 		  $(document).ready(function(){
 			$("#test").sticky({topSpacing:0, className:"hey"});
@@ -44,7 +45,12 @@
 		 
 		});
 		</script>
-		
+		<script type="text/javascript">
+			function scrollTo(target){
+				var targetPosition = $(target).offset().top;
+				$('html,body').animate({ scrollTop: targetPosition}, 'slow');
+			}
+		</script>
     </head>
 	
 	<body>
@@ -63,7 +69,7 @@
 						<li><a class="lien4" href="#tour">Tour dates</a></li>
 						<li><a class="lien5" href="#contact">Contact</a></li>
 					</ul>
-					<select>
+					<select name="dropdpown" size="1" onchange="scrollTo(this.value)">
 						<option value="" selected="Menu">Menu</option> 
 						<option value="#about">About</option>
 						<option value="#music">Music</option>
@@ -122,6 +128,9 @@
 			</div>
 		</div>
 		
+		
+    	
+	
 	</body>	
 	
 </html>
