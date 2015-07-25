@@ -1,0 +1,3 @@
+1. liens du menu ne se désouligne pas quand ils ne sont plus actifs 
+2. l'image du header ne s'affiche pas complètement (effet zoom, n'est pas cadré)
+3. les liens du body comme dans about ne fonctionnent pas
