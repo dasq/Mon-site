@@ -12,6 +12,7 @@
 		<meta name="description" content="Farid Bentchakal. Acoustic, guitar, solo music.">
 		<meta name="author" content="Farid Bentchakal">
 		<meta name="keywords" content="Farid Bentchakal, Music, Guitar, Acoustic, Travel.">
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
 		
 			<!-- Mobile Specific Metas
 	================================================== -->
@@ -70,6 +71,90 @@
 				$('html,body').animate({ scrollTop: targetPosition}, 'slow');
 			}
 		</script>
+		
+		<!-- Captcha function -->
+		<script>
+		function captchaCode() {
+		  var Numb1, Numb2, Numb3, Numb4, Code;     
+		  Numb1 = (Math.ceil(Math.random() * 10)-1).toString();
+		  Numb2 = (Math.ceil(Math.random() * 10)-1).toString();
+		  Numb3 = (Math.ceil(Math.random() * 10)-1).toString();
+		  Numb4 = (Math.ceil(Math.random() * 10)-1).toString();
+		  
+		  Code = Numb1 + Numb2 + Numb3 + Numb4;
+		  $("#captcha span").remove();
+		  $("#captcha input").remove();
+		  $("#captcha").append("<span id='code'>" + Code + "</span><input type='button' onclick='captchaCode();'>");
+		}
+
+		$(function() {
+		  captchaCode();
+		  
+		  $('#contactForm').submit(function(){
+			var captchaVal = $("#code").text();
+			var captchaCode = $(".captcha").val();
+			if (captchaVal == captchaCode) {
+			  $(".captcha").css({
+				"color" : "#609D29"
+			  });
+			}
+			else {
+			  $(".captcha").css({
+				"color" : "#CE3B46"
+			  });
+			}
+			
+			var emailFilter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,10})+$/;   
+			var emailText = $(".email").val();
+			if (emailFilter.test(emailText)) {
+			  $(".email").css({
+				"color" : "#609D29"
+			  });
+			}
+			else {
+			  $(".email").css({
+				"color" : "#CE3B46"
+			  });
+			}
+			
+			var nameFilter = /^([a-zA-Z \t]{3,15})+$/;
+			var nameText = $(".name").val();
+			if (nameFilter.test(nameText)) {
+			  $(".name").css({
+				"color" : "#609D29"
+			  });
+			}
+			else {
+			  $(".name").css({
+				"color" : "#CE3B46"
+			  });
+			}
+			
+			var messageText = $(".message").val().length;
+			if (messageText > 50) {
+			  $(".message").css({
+				"color" : "#609D29"
+			  });
+			}
+			else {
+			  $(".message").css({
+				"color" : "#CE3B46"
+			  });
+			}
+			
+			if ((captchaVal !== captchaCode) || (!emailFilter.test(emailText)) || (!nameFilter.test(nameText)) || (messageText < 50)) {
+			  return false;
+			}
+			if ((captchaVal == captchaCode) && (emailFilter.test(emailText)) && (nameFilter.test(nameText)) && (messageText > 50)) {
+			  $("#contactForm").css("display", "none");
+			  $("#form").append("<h2>Message sent!</h2>");
+			  return false;
+			}
+		  });       
+		});
+
+		</script>
+		
     </head>
 	
 	<body>
@@ -128,6 +213,7 @@
 			<div class="box">
 				<h2> Music </h2>
 				<p>  You can listen to my music here </br> Enjoy bro !!! </p>
+				<iframe width="50%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 		</div>
 		
@@ -139,7 +225,15 @@
 		<div id="pictures" class="container">
 			<div class="box">
 				<h2> Pictures </h2>
-				<p>  </br> You can travel with me </br> Fasten seat bro !!! </p>
+				<div id="slide">
+					<figure>
+						<img src="img/+3/DSC01871.JPG" alt="">
+						<img src="img/+3/DSC01246.JPG" alt="">
+						<img src="img/+3/DSC01304.JPG" alt="">
+						<img src="img/+3/DSC01525.JPG" alt="">
+						<img src="img/+3/DSC01835.JPG" alt="">
+					</figure>
+				</div>
 			</div>
 		</div>
 		
@@ -164,11 +258,24 @@
 			<div class="box">
 				<h2> Contact </h2>
 				<p>  </br> You can send me jokes or love messages or a mail to say to go fuck myself </br> As you wish bro !!! </p> 
+				<form action="" id="contactForm" method="post">
+					<span>Name</span>
+					<input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 /> </br>
+					<span>Email</span>
+					<input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 /> </br>
+					<span id="captcha"></span>
+					<input type="text" name="captcha" class="captcha" maxlength="4" size="4" placeholder="Enter captcha code" tabindex=3 /> </br>
+					<span>Message</span>
+					<textarea class="message" placeholder="Enter your message" tabindex=4></textarea> </br>
+					<input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
+				  </form>				
 			</div>
 		</div>
 		
-		
-    	
+		<!-- Footnote -->
+		<div id="footnote">
+		© Copyright 2015 Farid Bentchakal | <a href="mentions.html" target="_blank">Mentions légales</a> 
+		</div>
 	
 	</body>	
 	

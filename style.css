@@ -2,6 +2,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	  font: 16px 'Source Sans Pro', Georgia, sans-serif;
 
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -168,8 +169,146 @@ section {
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
 	}
 
+	#footnote {
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	color: #fff;
+	background-color: #466F80;	
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	height: 35px;
+    margin: 0;
+	bottom: 0px;
+    padding: 20px 20px 20px 20px;
+	position:relative;
+	margin-top: 0px;
+	text-align: center; 
+	border-top : solid;
+	}
+	
+	#mentions-legales {
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	color: #fff;
+	background-color: #466F80;	
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	height: auto;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+	position:relative;
+	margin-top: 0px;
+	text-align: left;
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
+	}
+	
 #box{
 	
 }
 
+/* Slide effect for photos */
+#slide {
+width: 80%; max-width: 723px; overflow: hidden; border: 3px solid #fff;
+}
 
+#slide figure {
+	position: relative; width: 500%;
+	margin: 0; padding: 0; font-size: 0; text-align: left;
+	animation: 30s slidy infinite; 
+}
+
+#slide img {
+	width:20%; height:auto; float:left;
+}
+
+@keyframes slidy {
+
+0% { left: 0%; }
+
+20% { left: 0%; }
+
+25% { left: -100%; }
+
+45% { left: -100%; }
+
+50% { left: -200%; }
+
+70% { left: -200%; }
+
+75% { left: -300%; }
+
+95% { left: -300%; }
+
+100% { left: -400%; }
+
+}
+
+/* Contact form display */
+#contact {
+  overflow: auto;
+}
+#contact form {
+  width:410px;
+  float:left;
+}
+
+#contact form span {
+  display:block;
+  float:left;
+  width:100px;
+  padding-top:5px;
+  font: 16px'Source Sans Pro', Georgia, serif;
+}
+#contact form input {
+  float:left;
+  width:255px;
+  border:0px;
+  color:#FFF;
+  padding:10px 10px 10px 30px;
+  font: 14px 'Source Sans Pro', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;
+}
+#contact form textarea {
+  float:left;
+  border:0px;
+  width:255px;
+  height:140px;
+  padding:10px 10px 10px 30px;
+  font: 14px 'Source Sans Pro', Verdana, Helvetica, sans-serif;
+  color:#FFF;
+  resize: none;
+}
+#contact form input.name {
+  background:#7E8E95 url("img/contact/name.png") no-repeat 10px 8px;
+}
+#contact form input.email {
+  background:#7E8E95 url("img/contact/mail.png") no-repeat 10px 9px;
+}
+#contact form input.captcha {
+  background:#7E8E95 url("img/contact/captcha.png") no-repeat 10px 9px;
+}
+#contact form textarea.message {
+  background:#7E8E95 url("img/contact/message.png") no-repeat 10px 8px;
+}
+#contact form input.submit {
+  cursor: pointer;
+  width:85px;
+  height:30px;
+  float:right;
+  padding:0px 0px 5px 0px;
+  margin:10px 16px 0px 0px;
+  background:#7E8E95;
+  color:#FFF;
+  font: 16px 'Source Sans Pro', Georgia, serif;
+}
+#contact #captcha span{
+  width: 44px;
+}
+#contact #captcha input{
+  background: url("img/contact/captcha.png") no-repeat scroll 0 0 transparent;
+  margin: 5px 0 0;
+  padding: 0;
+  border: medium none;
+  cursor: pointer;
+  width: 15px;
+}
