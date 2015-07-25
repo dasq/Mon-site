@@ -1,3 +1,4 @@
+/* General body paramters */
 body {
 	margin: 0;
 	padding: 0;
@@ -6,11 +7,8 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-a { color: #EB9B60; opacity:1; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
-a:active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
-a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
-a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
-
+/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Display of the titles of the content boxes                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* Title parameters */
 h2 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
@@ -21,42 +19,26 @@ h2 {
 	padding: 0;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of all the links in the website (except the ones specificied like the links in the menu                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* General links parameters */
+a { color: #EB9B60; opacity:1; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
+a:active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
+a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
+a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
+/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : END                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/* Image parameters to fully display */
 img {
 	max-width: 100%;
 	height: auto;
 	width: auto\9; /* ie8 */
 }
 
-section {
-	height: 600px;
-}
-
-#menu-container{
-	height:60px;
-	width:100%;
-	width: 100%;
-	position: relative;
-	z-index: 1000;
-}
-
-#menu {
-	background-color: #1C2D33;
-	color: #EB9B60;
-	opacity:0.95;
-	height: 60px;
-	padding: 0 20px 0 20px;
-	position: relative;
-	z-index: 1;
-	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
-	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
-	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
-	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
-}
-
-
+/* Header parameter to fully display Parallax */
 #header { height:250px; background-image: url("img/Logo.png"); background-size:cover; text-align:bottom; position:relative; }
 
+
+/* Parameters of the social icons*/
 #social {
 height: 50px; 
 width:100%;
@@ -80,20 +62,39 @@ text-align: right;}
 #social a {opacity:0.2;}
 #social a:hover {opacity:0.7;}
 
-#logo a { 
-	color: #EB9B60; 
-	text-decoration: none; 
-	float: left; 
-	font-size: 30px; 
-	line-height: 60px; 
-	font-family: 'Source Sans Pro', sans-serif; 
-	font-weight: bold; 
-	}
+/* Size of the content boxes */
+section {
+	height: 600px;
+}
+
+/* Parameters of the menu */
+#menu-container{
+	height:60px;
+	width:100%;
+	width: 100%;
+	position: relative;
+	z-index: 1000;
+}
+
+#menu {
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Color of the bar menu                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background-color: #1C2D33;
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the color of the bar menu                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	opacity:0.95;
+	height: 60px;
+	padding: 0 20px 0 20px;
+	position: relative;
+	z-index: 1;
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
+}
 
 nav { 
 	text-align:right; 
-	line-height:60px;
-	
+	line-height:60px;	
 	}
 	
 nav ul{
@@ -109,9 +110,14 @@ nav li{
 	margin-right: 1%;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the menu titles                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* General parameters of the menu titles */
 nav ul li a { color: #EB9B60; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
-nav ul li a.active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
+/*  Parameters of the menu titles when the mouse is over the title */
 nav ul li a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
+/*  Parameters of the menu titles when the title have been clicked on*/
+nav ul li a.active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
+/*  Parameters of the menu titles when the title have been visited */
 nav ul li a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;}
 
 nav select {display:none;}
@@ -119,27 +125,41 @@ nav select {display:none;}
 @media only screen and (max-width:960px) {
 	nav ul {display:none;}
 	nav select  {display: inline-block;}
-
 }
 
+/*Display of the name/link to the top*/
+#logo a { 
+	color: #EB9B60; 
+	text-decoration: none; 
+	float: left; 
+	font-size: 30px; 
+	line-height: 60px; 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-weight: bold; 
+	}
+
+/* Size display of the photos*/	
 section {
 	height:400px;
 	width:100%;
 }
 
+/*Display parameters of the content boxes*/
 #about {
     background-size: cover;
 	z-index: -1;
 	}
 
 #about, #pictures, #music, #tour, #contact {
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	color: #fff;
+	background-color: #466F80;	
+	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	height: 600px;
     margin: 0;
     padding: 20px 20px 20px 20px;
 	position:relative;
 	margin-top: 0px;
-	background-color: #466F80;	
 	text-align: left;
 	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
