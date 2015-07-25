@@ -4,3 +4,4 @@
 4. social icons à repositionner
 5. le liens du menu dirige sur les div mais ne s'alignent pas sur le top du div
 6. gérer l'envoi du mail du formulaire
+7. MAJ menu de mentions.html
