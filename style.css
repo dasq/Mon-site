@@ -113,13 +113,13 @@ nav li{
 
 /* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the menu titles                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* General parameters of the menu titles */
-nav ul li a { color: #EB9B60; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
+#menu-container #menu nav ul li a { color: #EB9B60; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
 /*  Parameters of the menu titles when the mouse is over the title */
-nav ul li a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
+#menu-container #menu nav ul li a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
 /*  Parameters of the menu titles when the title have been clicked on*/
-nav ul li a.active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
+#menu-container #menu nav ul li a.active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
 /*  Parameters of the menu titles when the title have been visited */
-nav ul li a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;}
+#menu-container #menu nav ul li a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; text-decoration-style:none;}
 
 nav select {display:none;}
 
@@ -145,10 +145,18 @@ section {
 	width:100%;
 }
 
+/* Anchor span for aligning top of the div with menu bar */
+.anchor{
+   display:block;
+   height:60px; /* this is the height of your header */
+   margin-top:-60px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+
 /*Display parameters of the content boxes*/
 #about {
     background-size: cover;
-	z-index: -1;
+	/*z-index: -1;*/
 	}
 
 #about, #pictures, #music, #tour, #contact {
@@ -158,7 +166,7 @@ section {
 	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	height: 600px;
     margin: 0;
-    padding: 20px 20px 20px 20px;
+    padding: 0px 20px 20px 50px;
 	position:relative;
 	margin-top: 0px;
 	text-align: left;
@@ -177,7 +185,7 @@ section {
 	height: 35px;
     margin: 0;
 	bottom: 0px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 50px;
 	position:relative;
 	margin-top: 0px;
 	text-align: center; 
@@ -191,7 +199,7 @@ section {
 	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	height: auto;
     margin: 0;
-    padding: 20px 20px 20px 20px;
+    padding: 0px 20px 20px 50px;
 	position:relative;
 	margin-top: 0px;
 	text-align: left;
