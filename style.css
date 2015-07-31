@@ -113,13 +113,13 @@ nav li{
 
 /* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the menu titles                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* General parameters of the menu titles */
-#menu-container #menu nav ul li a { color: #EB9B60; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
+#menu-container #menu nav ul li a:link { color: #EB9B60; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
 /*  Parameters of the menu titles when the mouse is over the title */
 #menu-container #menu nav ul li a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
 /*  Parameters of the menu titles when the title have been clicked on*/
-#menu-container #menu nav ul li a.active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
+#menu-container #menu nav ul li a:active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; text-decoration:none;}
 /*  Parameters of the menu titles when the title have been visited */
-#menu-container #menu nav ul li a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; text-decoration-style:none;}
+#menu-container #menu nav ul li a:visited { color: #FFF; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; text-decoration-style:none;} 
 
 nav select {display:none;}
 
