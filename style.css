@@ -320,3 +320,8 @@ width: 80%; max-width: 723px; overflow: hidden; border: 3px solid #fff;
   cursor: pointer;
   width: 15px;
 }
+
+#contact form input.submit:hover  {
+    transform: scale(1.2);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
