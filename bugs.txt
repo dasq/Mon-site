@@ -1,2 +1,1 @@
-1. liens du menu ne se désouligne pas quand ils ne sont plus actifs 
-2. gérer l'envoi du mail du formulaire
+1. gérer l'envoi du mail du formulaire

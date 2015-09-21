@@ -168,7 +168,8 @@ section {
 	color: #fff;
 	background-color: #466F80;	
 	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    margin: 0;
+    height: 600px;	
+	margin: 0;
     padding: 0px 20px 20px 50px;
 	position:relative;
 	margin-top: 0px;
@@ -180,9 +181,13 @@ section {
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
 	}
 	
-	#about, #music, #tour, #contact { height: 600px;	}
-	
-	#pictures{ height: 900px; }
+	#about, #pictures, #music, #contact { height: 600px; }
+	#tour { height: 300px; }
+	#tour table{
+		width:100%; /*background-color:#EB9B60;*/color:white;border-bottom:1px solid white;margin-bottom:10px;
+	}
+	#tour th{border-bottom:1px solid white; padding: 4px 0px 4px 0px;}
+	#tour td{padding: 4px 2px 4px 0px;}
 	
 	#about img {
 		float:left;
@@ -190,7 +195,9 @@ section {
 		width: auto;
 		padding: 0px 50px 0px 0px;
 	}
-
+	
+	
+	
 	#footnote {
 	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the content                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	color: #fff;
@@ -335,7 +342,6 @@ width: 80%; max-width: 723px; overflow: hidden; border: 3px solid #fff;
   width: 15px;
 }
 
-<<<<<<< HEAD
 /* SLIDER */
 
 
@@ -369,9 +375,11 @@ width: 80%; max-width: 723px; overflow: hidden; border: 3px solid #fff;
 	box-shadow:1px 1px 5px rgba(0,0,0,0.7);
 	height:399px;
 	width:601px;
-	margin:40px auto 0;
+	/*margin:40px auto 0;*/
 	overflow:visible;
 	position:relative;
+	float:left;
+	margin: 0px 50px 0px 0px;
 }
 #mask {
 	overflow:hidden;
@@ -451,18 +459,4 @@ width: 80%; max-width: 723px; overflow: hidden; border: 3px solid #fff;
 	background:#000;
 	-moz-animation:fullexpand 25s ease-out infinite;
 	-webkit-animation:fullexpand 25s ease-out infinite;
-=======
-#contact form input.submit:hover  {
-    transform: scale(1.2);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-	cursor: pointer;
-	width:85px;
-	height:30px;
-	float:right;
-	padding:0px 0px 5px 0px;
-	margin:10px 16px 0px 0px;
-	background:#EB9B60;
-	color:#FFF;
-	font: 16px 'Source Sans Pro', Georgia, serif;
->>>>>>> origin/gh-pages
 }
