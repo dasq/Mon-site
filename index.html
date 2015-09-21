@@ -147,7 +147,7 @@
 			}
 			if ((captchaVal == captchaCode) && (emailFilter.test(emailText)) && (nameFilter.test(nameText)) && (messageText > 50)) {
 			  $("#contactForm").css("display", "none");
-			  $("#form").append("<h2>Message sent!</h2>");
+			  $("#form").append("<h1>Message sent!</h1>");
 			  return false;
 			}
 		  });       
@@ -200,8 +200,8 @@
 		<span class="anchor" id="about-link"></span>
 		<div id="about" class="container">
 			<div class="box">
-				<h2> About </h2>
-				<p> I am the best of the world that you never saw and that you will never see. </p>
+				<h1> About </h1>
+				<p> <img src="img/Busking in Dresden.jpg" alt="Photo busking in Dresden">Graduated from classical and jazz schools, Farid has investigated and performed in all kind of music from world music to hip-hop and everything in between. With this solo project, Farid has found his path in the music genres and offers today a travelling experience through modern fingerstyle guitar. His songs demonstrate clearly the long world travel he just accomplished recently and got his inspiration from. Orient, India or America are just a part of where you will find yourself relaxing and dreaming… </p>
 				<a href="#contact"> Contact me here!</a>
 
 			</div>
@@ -215,8 +215,17 @@
 		<span class="anchor" id="music-link"></span>
 		<div id="music" class="container">
 			<div class="box">
-				<h2> Music </h2>
+				<h1> Music </h1>
 				<p>  You can listen to my music here </br> Enjoy bro !!! </p>
+				<ul>
+						<li>Aotearoa</a></li>
+						<li>Going Overseas</a></li>
+						<li>Traditions</a></li>
+						<li>Tradivan</a></li>
+						<li>On My Way To</a></li>
+						<li>Circles</a></li>
+						<li>Tree Song</a></li>
+					</ul>
 				<iframe width="50%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 		</div>
@@ -229,8 +238,52 @@
 		<span class="anchor" id="pictures-link"></span>
 		<div id="pictures" class="container">
 			<div class="box">
-				<h2> Pictures </h2>
-				<div id="slide">
+				<h1> Pictures </h1>
+				
+				<div id="content-slider">
+					<div id="slider">
+						<div id="mask">
+							<ul>
+								<li id="first" class="firstanimation">
+									<img src="img/+3/DSC01871.JPG" alt="New Zealand"/>
+									<div class="tooltip">
+										<h2>Cougar</h2>
+									</div>
+								</li>
+
+								<li id="second" class="secondanimation">
+									<img src="img/+3/DSC01246.JPG" alt="Sri Lanka"/>
+									<div class="tooltip">
+										<h2>Lions</h2>
+									</div>
+								</li>
+								
+								<li id="third" class="thirdanimation">
+									<img src="img/+3/DSC01304.JPG" alt="Snowalker"/>
+									<div class="tooltip">
+										<h2>Snowalker</h2>
+									</div>
+								</li>
+											
+								<li id="fourth" class="fourthanimation">
+									<img src="img/+3/DSC01525.JPG" alt="Howling"/>
+									<div class="tooltip">
+										<h2>Howling</h2>
+									</div>
+								</li>
+											
+								<li id="fifth" class="fifthanimation">
+									<img src="img/+3/DSC01835.JPG" alt="Sunbathing"/>
+									<div class="tooltip">
+										<h2>Sunbathing</h2>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="progress-bar"></div>
+					</div>
+				</div> 
+				<!--<div id="slide">
 					<figure>
 						<img src="img/+3/DSC01871.JPG" alt="">
 						<img src="img/+3/DSC01246.JPG" alt="">
@@ -238,7 +291,7 @@
 						<img src="img/+3/DSC01525.JPG" alt="">
 						<img src="img/+3/DSC01835.JPG" alt="">
 					</figure>
-				</div>
+				</div>-->
 			</div>
 		</div>
 		
@@ -250,7 +303,7 @@
 		<span class="anchor" id="tour-link"></span>
 		<div id="tour" class="container">
 			<div class="box">
-				<h2> Tour dates </h2>
+				<h1> Tour dates </h1>
 				<p>  </br> Nothing yet but coming soon... </br> Stay in tune bro !!! </p>
 				<a href="#header"> Go to the top my friend </a>
 			</div>
@@ -264,7 +317,7 @@
 		<span class="anchor" id="contact-link"></span>
 		<div id="contact" class="container">
 			<div class="box">
-				<h2> Contact </h2>
+				<h1> Contact </h1>
 				<p>  </br> You can send me jokes or love messages or a mail to say to go fuck myself </br> As you wish bro !!! </p> 
 				<form action="" id="contactForm" method="post">
 					<span>Name</span>
