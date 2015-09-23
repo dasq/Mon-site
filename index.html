@@ -12,9 +12,8 @@
 		<meta name="description" content="Website of Acoustic Modern Fingerstyle Guitarist Farid Bentchakal">
 		<!--<meta name="keywords" content="Farid Bentchakal, acoustic, modern, fingerstyle, guitar, guitarist, music, musician, world music, folk music, about, booking, travel">-->
 		<meta name="copyright" content="Farid Bentchakal - 2015">
-		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html">
 		<meta name="language" content="English">
-		<meta http-equiv="content-language" content="en"> 
 		
 		<!-- TO UPDATE WITH FAVICON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		Your favicon graphic must be 16x16 pixels 
@@ -48,7 +47,7 @@
 		</script>
 		<script src="js/parallax.js-master/parallax.min.js"></script>
 		
-		<!----- JQUERY FOR SLIDING NAVIGATION --->   
+		<!-- - - - JQUERY FOR SLIDING NAVIGATION - -->   
 		<script>
 		$(document).ready(function() {
 		$('a[href*=#]').each(function() {
@@ -155,7 +154,7 @@
 			}
 			if ((captchaVal == captchaCode) && (emailFilter.test(emailText)) && (nameFilter.test(nameText)) && (messageText > 50)) {
 			  $("#contactForm").css("display", "none");
-			  $("#form").append("<h1>Message sent!</h1>");
+			  $("#form").append("<h2>Message sent!</h2>");
 			  return false;
 			}
 		  });       
@@ -192,7 +191,7 @@
 						<li><a class="lien5" href="#contact-link">Contact</a></li>
 					</ul>
 					<select name="dropdpown" size="1" onchange="scrollTo(this.value)">
-						<option value="" selected="Menu">Menu</option> 
+						<option value="" selected>Menu</option> 
 						<option value="#header">Top</option>
 						<option value="#about-link">About</option>
 						<option value="#music-link">Music</option>
@@ -208,8 +207,8 @@
 		<span class="anchor" id="about-link"></span>
 		<div id="about" class="container">
 			<div class="box">
-				<h1> About </h1>
-				<p> <img src="img/Busking in Dresden.jpg" alt="Photo busking in Dresden">Graduated from classical and jazz schools, 
+				<h2> About </h2>
+				<p> <img src="img/Busking_in_Dresden.jpg" alt="Photo busking in Dresden">Graduated from classical and jazz schools, 
 				Farid has investigated and performed in all kind of music from world music to hip-hop and everything in between. 
 				With this solo project, Farid has found his path in the music genres and offers today a travelling experience 
 				through modern fingerstyle guitar. His songs demonstrate clearly the long world travel he just accomplished 
@@ -221,23 +220,22 @@
 		</div>
 		
 		<!-- First photo -->
-		<section id="slide-1" data-parallax="scroll" data-image-src="img/+3/DSC01939.JPG">	
-		</section>
+		<section id="slide-1" data-parallax="scroll" data-image-src="img/+3/DSC01939.JPG"></section>
 
 		<!-- Music player -->
 		<span class="anchor" id="music-link"></span>
 		<div id="music" class="container">
 			<div class="box">
-				<h1> Music </h1>
-				<p>  You can listen to my music here </br> Enjoy bro !!! </p>
+				<h2> Music </h2>
+				<p>  You can listen to my music here <br/> Enjoy bro !!! </p>
 				<ul>
-						<li>Aotearoa</a></li>
-						<li>Going Overseas</a></li>
-						<li>Traditions</a></li>
-						<li>Tradivan</a></li>
-						<li>On My Way To</a></li>
-						<li>Circles</a></li>
-						<li>Tree Song</a></li>
+						<li>Aotearoa</li>
+						<li>Going Overseas</li>
+						<li>Traditions</li>
+						<li>Tradivan</li>
+						<li>On My Way To</li>
+						<li>Circles</li>
+						<li>Tree Song</li>
 					</ul>
 				<iframe width="50%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
@@ -251,7 +249,7 @@
 		<span class="anchor" id="pictures-link"></span>
 		<div id="pictures" class="container">
 			<div class="box">
-				<h1> Pictures </h1>
+				<h2> Pictures </h2>
 				
 				<div id="content-slider">
 					<div id="slider">
@@ -323,7 +321,7 @@
 		<span class="anchor" id="tour-link"></span>
 		<div id="tour" class="container">
 			<div class="box">
-				<h1> Tour dates </h1>
+				<h2> Tour dates </h2>
 				 <table>
 				  <tr>
 					<th>Date</th>
@@ -351,17 +349,17 @@
 		<span class="anchor" id="contact-link"></span>
 		<div id="contact" class="container">
 			<div class="box">
-				<h1> Contact </h1>
-				<p>  </br> You can send me jokes or love messages or a mail to say to go fuck myself </br> As you wish bro !!! </p> 
+				<h2> Contact </h2>
+				<p>You can send me jokes or love messages or a mail to say to go fuck myself <br/> As you wish bro !!! </p> 
 				<form action="" id="contactForm" method="post">
 					<span>Name</span>
-					<input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 /> </br>
+					<input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 /> <br/>
 					<span>Email</span>
-					<input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 /> </br>
+					<input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 /> <br/>
 					<span id="captcha"></span>
 					<input type="text" name="captcha" class="captcha" maxlength="4" size="4" placeholder="Enter captcha code" tabindex=3 /> </br>
 					<span>Message</span>
-					<textarea class="message" placeholder="Enter your message" tabindex=4></textarea> </br>
+					<textarea class="message" placeholder="Enter your message" tabindex=4></textarea> <br/>
 					<input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
 				  </form>				
 			</div>
