@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	  font: 16px 'Source Sans Pro', Georgia, sans-serif;
+	font: 16px 'Source Sans Pro', Georgia, sans-serif;
 
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -28,7 +28,7 @@ h2 {
 a { color: #EB9B60; opacity:1; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
 a:active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; }
 a:hover { color: #FFF; opacity:1; border-bottom: 0px none;  }
-a:visited { color: ##EB9B60; opacity:0.6; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
+a:visited { color: #EB9B60; opacity:0.6; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
 /* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : END                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /* Image parameters to fully display */
@@ -39,7 +39,7 @@ img {
 }
 
 /* Header parameter to fully display Parallax */
-#header { height:250px; background-image: url("img/Logo.png"); background-size:cover; text-align:bottom; position:relative; }
+#header { height:250px; background-image: url("img/Logo.png"); background-size:cover; position:relative; }
 
 
 /* Parameters of the social icons*/
@@ -93,7 +93,6 @@ section {
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
 	-o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
 }
 
 nav { 
@@ -122,7 +121,7 @@ nav li{
 /*  Parameters of the menu titles when the title have been clicked on*/
 #menu-container #menu nav ul li a:active { color: #FFF; opacity:1; border-bottom: 2px solid #fff; text-decoration:none;}
 /*  Parameters of the menu titles when the title have been visited */
-#menu-container #menu nav ul li a:visited { color: #FFF; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; text-decoration-style:none;} 
+#menu-container #menu nav ul li a:visited { color: #FFF; opacity:1; font-size: 20px; font-family: 'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
 
 nav select {display:none;}
 
@@ -178,7 +177,6 @@ section {
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
 	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
 	}
 	
 	#about, #pictures, #music, #contact { height: 600px; }
@@ -226,7 +224,6 @@ section {
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
 	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=30);
 	}
 	
 #box{
