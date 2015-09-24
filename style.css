@@ -35,7 +35,7 @@ a:visited { color: #EB9B60; opacity:0.6; font-family: 'Source Sans Pro', sans-se
 img {
 	max-width: 100%;
 	height: auto;
-	width: auto\9; /* ie8 */
+	width: auto\8; /* ie8 */
 }
 
 /* Header parameter to fully display Parallax */
